@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#root {
+  --cor-primaria: #6933D5;
+  --cor-secundario: #2C70D3;
+  --cor-texto-primario: #1E293B;
+  --cor-texto-secundario: #000000;
+
+  --cor-background-principal: #F6F6F6;
+  --cor-background-secundario: #F8F9FB;
+
+  --cor-detalhes: #cfcfcf;
+  --cor_sombra: #A6A6A6;
+
+  --radius: 30px
+}
+
+body {
+ font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.titulo-hero {
+  size: 60px;
+}
+
+.subtitulo {
+  color: #6E6E6E;
+}
+
+main {
+  position: relative;
+  background: var(--cor-background-principal);
+  overflow: hidden;
+}
+
+/* Círculo esquerdo */
+main::before {
+  content: "";
+  position: absolute;
+  left: -120px;
+  width: 350px;
+  height: 350px;
+  background: #D3B22C;
+  filter: blur(120px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Círculo direito */
+main::after {
+  content: "";
+  position: absolute;
+  top: -10px;     
+  right: -120px;
+  width: 350px;
+  height: 350px;
+  background: #00FFCC;
+  filter: blur(120px);
+  opacity: 0.2;
+  z-index: 0;  
+}
+
+/* Conteúdo fica por cima */
+.hero > .row {
+  position: relative;
+  z-index: 10;
+}
+
+.section {
+  padding-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .texto-responsivo {
+    font-size: 18px; 
+  }
+}

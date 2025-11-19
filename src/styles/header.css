@@ -1,0 +1,36 @@
+#root {
+  --cor-primaria: #6933D5;
+  --cor-secundario: #2C70D3;
+  --cor-texto-primario: #1E293B;
+  --cor-texto-secundario: #000000;
+
+  --cor-background-principal: #F6F6F6;
+  --cor-background-secundario: #F8F9FB;
+
+  --cor-detalhes: #cfcfcf;
+  --cor_sombra: #A6A6A6;
+
+  --radius: 30px
+}
+
+.header {
+    border-bottom: 1px solid var(--cor-detalhes);
+}
+
+.navbar-toggler {
+  border-color: var(--cor-primaria);
+}
+
+.navbar-toggler-icon {
+  filter: invert(27%) sepia(70%) saturate(3500%) hue-rotate(245deg) brightness(85%) contrast(90%);
+}
+
+.link {
+  color: var(--cor-texto-secundario);
+}
+
+.link:hover {
+  color: var(--cor-primaria);
+}
+
+
