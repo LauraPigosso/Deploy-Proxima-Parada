@@ -7,6 +7,9 @@ import './styles/App.css'
 import menino from '../public/Ilustracao-menino.png'
 import menina from '../public/ilustracao-menina.png'
 import vector from '../public/Vector.png'
+import question from '../public/question-icon.svg'
+import people from '../public/people-icon.svg'
+import maleta from '../public/suitcase-icon.svg'
 import howillustration from '../public/how-illustration.png'
 
 import Header from './components/header/header'
@@ -103,9 +106,9 @@ function App() {
 
               <div className="carousel-item active">
                 <CardBox
-                  icon={vector}
+                  icon={people}
                   title="Mais comum do que você pensa"
-                  descricaoicone="Ícone de chapéu de formando"
+                  descricaoicone="Ícone de um grupo de pessoas"
                   description="82% dos jovens têm dificuldades em escolher uma carreira profissional."
                   link="https://blog.unigrancapital.com.br/82-dos-jovens-tem-dificuldades-em-escolher-uma-carreira-profissional/"
                   source="Fonte: CMOV"
@@ -125,9 +128,9 @@ function App() {
 
               <div className="carousel-item">
                 <CardBox
-                  icon={vector}
+                  icon={question}
                   title="42% sem conhecimento de oportunidades"
-                  descricaoicone="Ícone de chapéu de formando"
+                  descricaoicone="Ícone de ponto de interrogação"
                   description="42% dos jovens desconhecem a educação profissional."
                   link="https://www.metropoles.com/brasil/educacao-profissional/pesquisa"
                   source="Fonte: SENAI"
@@ -136,9 +139,9 @@ function App() {
 
               <div className="carousel-item">
                 <CardBox
-                  icon={vector}
+                  icon={maleta}
                   title="Pessimismo crescente"
-                  descricaoicone="Ícone de chapéu de formando"
+                  descricaoicone="Ícone de maleta"
                   description="57% dos jovens formandos de 2025 estão pessimistas sobre sua carreira."
                   link="https://exame.com/carreira/57-dos-jovens-formandos"
                   source="Fonte: Exame"
@@ -175,9 +178,9 @@ function App() {
           <div className="row align-items-center d-none d-md-flex mt-4">
 
             <CardBox
-              icon={vector}
+              icon={people}
               title="Mais comum do que você pensa"
-              descricaoicone="Ícone de chapéu de formando"
+              descricaoicone="Ícone de um grupo de pessoas"
               description="Cerca de 82% dos jovens têm dificuldades em escolher uma carreira profissional, reflexo das inúmeras possibilidades do mercado e das constantes mudanças no mundo do trabalho."
               link="https://blog.unigrancapital.com.br/82-dos-jovens-tem-dificuldades-em-escolher-uma-carreira-profissional/"
               source="Fonte: CMOV"
@@ -193,18 +196,18 @@ function App() {
             />
 
             <CardBox
-              icon={vector}
+              icon={question}
               title="42% sem conhecimento"
-              descricaoicone="Ícone de chapéu de formando"
+              descricaoicone="Ícone de ponto de interrogação"
               description="Uma pesquisa revela que 42% dos jovens desconhecem a educação profissional, o que evidencia a falta de acesso a informações sobre cursos técnicos"
               link="https://www.metropoles.com/brasil/educacao-profissional/pesquisa"
               source="Fonte: SENAI"
             />
 
             <CardBox
-              icon={vector}
+              icon={maleta}
               title="Pessimismo crescente"
-              descricaoicone="Ícone de chapéu de formando"
+              descricaoicone="Ícone de maleta"
               description="Cerca de 57% dos jovens que se formam em 2025 estão pessimistas sobre o início das suas carreiras, refletindo incertezas sobre o mercado de trabalho"
               link="https://exame.com/carreira/57-dos-jovens-formandos"
               source="Fonte: Exame"
